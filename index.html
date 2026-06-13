@@ -117,8 +117,9 @@
     </footer>
 
     <script>
-        // Current year for the colophon
-        document.getElementById("year").textContent = new Date().getFullYear();
+        // Current year for the colophon — only run if that element still exists
+        var yearEl = document.getElementById("year");
+        if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
         // Gentle scroll-reveal — only when motion is welcome and the API exists
         var motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
