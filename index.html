@@ -1,32 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Library of Jackexandria</title>
+    <meta name="description" content="A private catalogue of Reformed and Puritan texts — transcribed, modernized, and typeset by hand, then given freely as ebooks and audiobooks.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Purchase Physical Books</h1>
-    <p>Coming soon 👀</p>
-    <h1>Ebooks</h1>
-    <h2>A Topical Reader of the Reformed Confessions</h2>
-     <a href="Reformed Confessions Reader (ebook version).pdf">Download PDF</a><br>
-    <h2>Richard Baxter - A Christian Directory</h2>
-    <h3>All four books of Richard Baxter's <i>A Christian Directory</i> from Monergism combined into one document with a master TOC at the beginning, page numbers and headers added</h3>
-    <a href="A Christian Directory Complete Final.pdf">Download PDF</a><br>
-    <h2>John Ball - A Treatise on the Covenant of Grace (AI reader optimized)</h2>
-    <h3>John Ball's <i>Treatise on the Covenant of Grace</i> optimized for ai readers (dropcaps removed, spelling modernized, abbreviations expanded)</h3>
-    <a href="Ball's Treatise on the Covenant of Grace (ai reader optimized).pdf">Download PDF</a>
 
-    <h1>Audiobooks</h1>
-    <a href="https://www.youtube.com/@Do_the_Listening"><i>Do the Listening!</i> YouTube channel with all audiobooks</a><br>
-    <h2>The Theological Theses of Louis Le Blanc</h2>
-    <a href="https://open.spotify.com/show/033e0y4v9pR0DDvNXkGpzx?si=qctG74lKQGihx9VDI6ajxQ">Listen on Spotify</a><br>
-    <a href="https://podcasts.apple.com/us/podcast/theological-theses-louis-le-blanc/id1896575473">Listen on Apple Podcasts</a><br>
-    <a href="https://youtube.com/playlist?list=PL5Z0tC5hC-fVb1qs1BWC5naTH1-cKedeS&si=BikMq6aU_c0C9TKr">Listen on YouTube</a><br>
+    <header class="topbar">
+        <a class="topbar__mark" href="#top">Jackexandria</a>
+        <nav class="topbar__nav" aria-label="Sections">
+            <a href="#ebooks">Ebooks</a>
+            <a href="#audiobooks">Audiobooks</a>
+            <a href="#physical">Physical Books</a>
+        </nav>
+    </header>
 
-    <h2><i>On Marriage and Concupisence</i> by St. Augustine</h2>
-    <a href="https://open.spotify.com/show/033evsgrA7YfUMJcpbZs9W?si=TnFkQaIOSoSuOcgxVLOpew">Listen on Spotify</a><br>
-    <a href="https://podcasts.apple.com/us/podcast/on-marriage-and-concupiscence-st-augustine/id1896575446">Listen on Apple Podcasts</a><br>
-    <a href="https://youtube.com/playlist?list=PL5Z0tC5hC-fUgLecRRwA_5_Uy33Lq4LKV&si=mT02TNqFgCaSnmWZ">Listen on YouTube</a><br>
-    
+    <main id="top">
+
+        <section class="hero">
+            <p class="hero__eyebrow">Ex Libris</p>
+            <h1 class="hero__title">The Library<span class="of">of</span>Jackexandria</h1>
+            <div class="ornament" aria-hidden="true">&#10087;</div>
+            <p class="hero__lede reveal">A working collection of Reformed and Puritan texts &mdash; transcribed from the originals, modernized, and typeset by hand, then given freely to anyone who would read or hear them.</p>
+        </section>
+
+        <section id="ebooks" class="shelf">
+            <header class="shelf__head reveal">
+                <span class="shelf__label">Holdings</span>
+                <h2 class="shelf__title">Ebooks</h2>
+                <span class="shelf__rule" aria-hidden="true"></span>
+            </header>
+
+            <ul class="entries">
+                <li class="entry reveal">
+                    <span class="entry__kind">Ebook &middot; PDF</span>
+                    <h3 class="entry__title">A Topical Reader of the Reformed Confessions</h3>
+                    <p class="entry__note">The historic Reformed confessions, arranged by topic for study and reference.</p>
+                    <div class="entry__actions">
+                        <a class="action" href="Reformed Confessions Reader (ebook version).pdf">Download PDF</a>
+                    </div>
+                </li>
+
+                <li class="entry reveal">
+                    <span class="entry__kind">Ebook &middot; PDF</span>
+                    <h3 class="entry__title">Richard Baxter &mdash; A Christian Directory</h3>
+                    <p class="entry__note">All four books of Baxter&rsquo;s <i>A Christian Directory</i> (from Monergism) combined into a single volume, with a master table of contents, page numbers, and running headers.</p>
+                    <div class="entry__actions">
+                        <a class="action" href="A Christian Directory Complete Final.pdf">Download PDF</a>
+                    </div>
+                </li>
+
+                <li class="entry reveal">
+                    <span class="entry__kind">Ebook &middot; PDF</span>
+                    <h3 class="entry__title">John Ball &mdash; A Treatise on the Covenant of Grace</h3>
+                    <p class="entry__note">Ball&rsquo;s <i>Treatise on the Covenant of Grace</i>, optimized for AI / text-to-speech readers: drop caps removed, spelling modernized, abbreviations expanded.</p>
+                    <div class="entry__actions">
+                        <a class="action" href="Ball's Treatise on the Covenant of Grace (ai reader optimized).pdf">Download PDF</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="audiobooks" class="shelf">
+            <header class="shelf__head reveal">
+                <span class="shelf__label">Holdings</span>
+                <h2 class="shelf__title">Audiobooks</h2>
+                <span class="shelf__rule" aria-hidden="true"></span>
+            </header>
+
+            <div class="callout reveal">
+                <span class="callout__fleuron" aria-hidden="true">&#10087;</span>
+                <p class="callout__text">Every reading lives on the <em>Do the Listening!</em> channel.</p>
+                <a class="action" href="https://www.youtube.com/@Do_the_Listening" target="_blank" rel="noopener">Visit on YouTube</a>
+            </div>
+
+            <ul class="entries">
+                <li class="entry reveal">
+                    <span class="entry__kind">Audiobook</span>
+                    <h3 class="entry__title">The Theological Theses of Louis Le Blanc</h3>
+                    <div class="entry__actions">
+                        <a class="action" href="https://open.spotify.com/show/033e0y4v9pR0DDvNXkGpzx?si=qctG74lKQGihx9VDI6ajxQ" target="_blank" rel="noopener">Spotify</a>
+                        <a class="action action--quiet" href="https://podcasts.apple.com/us/podcast/theological-theses-louis-le-blanc/id1896575473" target="_blank" rel="noopener">Apple Podcasts</a>
+                        <a class="action action--quiet" href="https://youtube.com/playlist?list=PL5Z0tC5hC-fVb1qs1BWC5naTH1-cKedeS&si=BikMq6aU_c0C9TKr" target="_blank" rel="noopener">YouTube</a>
+                    </div>
+                </li>
+
+                <li class="entry reveal">
+                    <span class="entry__kind">Audiobook</span>
+                    <h3 class="entry__title"><i>On Marriage and Concupiscence</i> by St. Augustine</h3>
+                    <div class="entry__actions">
+                        <a class="action" href="https://open.spotify.com/show/033evsgrA7YfUMJcpbZs9W?si=TnFkQaIOSoSuOcgxVLOpew" target="_blank" rel="noopener">Spotify</a>
+                        <a class="action action--quiet" href="https://podcasts.apple.com/us/podcast/on-marriage-and-concupiscence-st-augustine/id1896575446" target="_blank" rel="noopener">Apple Podcasts</a>
+                        <a class="action action--quiet" href="https://youtube.com/playlist?list=PL5Z0tC5hC-fUgLecRRwA_5_Uy33Lq4LKV&si=mT02TNqFgCaSnmWZ" target="_blank" rel="noopener">YouTube</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="physical" class="shelf shelf--quiet">
+            <header class="shelf__head reveal">
+                <span class="shelf__label">Forthcoming</span>
+                <h2 class="shelf__title">Physical Books</h2>
+                <span class="shelf__rule" aria-hidden="true"></span>
+            </header>
+            <p class="forthcoming reveal">Printed editions are in preparation. <span class="wink">&#128064;</span></p>
+        </section>
+
+    </main>
+
+    <footer class="colophon">
+        <div class="colophon__mark" aria-hidden="true">&#10087;</div>
+        <p class="colophon__name">The Library of Jackexandria</p>
+        <p class="colophon__note">Composed in Garamond. Reformed &amp; Puritan texts, transcribed and freely given. <span>&copy; <span id="year">2026</span></span></p>
+    </footer>
+
+    <script>
+        // Current year for the colophon
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Gentle scroll-reveal — only when motion is welcome and the API exists
+        var motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (motionOK && "IntersectionObserver" in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: "0px 0px -8% 0px" });
+            document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+        } else {
+            // No animation: make sure everything is simply visible
+            document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
+        }
+    </script>
+
 </body>
 </html>
