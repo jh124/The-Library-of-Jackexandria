@@ -390,6 +390,7 @@ main {
   line-height: 1.55;
 }
 .colophon__note span { white-space: nowrap; }
+.colophon__social { margin-top: 1.2rem; display: inline-flex; }
 
 /* ---- Scroll reveal (progressive enhancement) ------------------------------ */
 .reveal { opacity: 0; transform: translateY(14px); }
